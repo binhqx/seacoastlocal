@@ -1,0 +1,25 @@
+Index: includes/jquery.drilldown.js
+===================================================================
+--- includes/jquery.drilldown.js
++++ includes/jquery.drilldown.js
+@@ -122,9 +122,9 @@
+           // Set initial active menu state.
+           var activeLink;
+           $('ul.menu a', menu).removeClass('active');
+-          if (settings.activePath && $('ul.menu a[href='+settings.activePath+']', menu).size() > 0) {
++          if (settings.activePath && $('ul.menu a[href="'+settings.activePath+'"]', menu).size() > 0) {
+             this.activePath = settings.activePath;
+-            activeLink = $('ul.menu a[href='+settings.activePath+']', menu).addClass('active');
++            activeLink = $('ul.menu a[href="'+settings.activePath+'"]', menu).addClass('active');
+           }
+           if (!activeLink) {
+             activeLink = $('ul.menu a.active', menu).size() ? $('ul.menu a.active', menu) : $('ul.menu > li > a', menu);
+@@ -145,7 +145,7 @@
+               }
+               else {
+                 var url = $(this).children('a').attr('href');
+-                var activeLink = $('ul.menu a[href='+url+']', menu);
++                var activeLink = $('ul.menu a[href="'+url+'"]', menu);
+                 menu.drilldown('setActive', {
+                   activeLink: activeLink,
+                   trail: settings.trail,
