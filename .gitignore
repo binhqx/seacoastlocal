@@ -36,3 +36,7 @@ xmlrpc.php
 /scripts
 /themes
 default.settings.php
+drushrc.php
+public_html/INSTALL.pgsql.txt
+public_html/INSTALL.sqlite.txt
+public_html/INSTALL.mysql.txt
