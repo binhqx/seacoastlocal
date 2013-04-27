@@ -1,1 +1,21 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+.zone-preface  .block-menu-join-menu .block-inner,
+.zone-preface  .block-menu-shift-menu .block-inner,
+.zone-preface  .block-menu-engage-menu .block-inner,
+.zone-preface  .block-menu-support-menu .block-inner{
+	height: 380px;
+	margin-bottom: 20px;
+}
+
+.zone-preface  .block-menu-join-menu .block-inner .block-title ,
+.zone-preface  .block-menu-shift-menu .block-inner .block-title ,
+.zone-preface  .block-menu-engage-menu .block-inner .block-title ,
+.zone-preface  .block-menu-support-menu .block-inner .block-title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 110px;
+	bottom: 110px;
+	font-size: 100px;
+}

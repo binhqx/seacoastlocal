@@ -1,2 +1,43 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+@font-face {
+    font-family: 'chalet-parisnineteensixty';
+    src: url('fonts/chalet-parisnineteensixty.eot');
+    src: url('fonts/chalet-parisnineteensixty.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chalet-parisnineteensixty.woff') format('woff'),
+         url('fonts/chalet-parisnineteensixty.ttf') format('truetype'),
+         url('fonts/chalet-parisnineteensixty.svg#chaletmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutratext';
+    src: url('fonts/neutratext-book.eot');
+    src: url('fonts/neutratext-book.eot?#iefix') format('embedded-opentype'),
+         url('fonts/neutratext-book.woff') format('woff'),
+         url('fonts/neutratext-book.ttf') format('truetype'),
+         url('fonts/neutratext-book.svg#chaletmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutratext';
+    src: url('fonts/neutratext-bold.eot');
+    src: url('fonts/neutratext-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/neutratext-bold.woff') format('woff'),
+         url('fonts/neutratext-bold.ttf') format('truetype'),
+         url('fonts/neutratext-bold.svg#chaletmedium') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+	font-family: 'neutratext', Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'neutratext', Sans-Serif;	
+}

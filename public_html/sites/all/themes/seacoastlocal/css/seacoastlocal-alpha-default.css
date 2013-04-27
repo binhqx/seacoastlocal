@@ -1,1 +1,125 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+.leacoast-local-logo{
+  padding: 18px;
+}
+
+.frontpage-block-menu {
+  position: relative;
+}
+
+.frontpage-block-menu .block-title {
+	position: relative;
+  text-align:center;
+  font-size: 60px;
+  font-family: 'chalet-parisnineteensixty', Sans-Serif; 
+  font-weight: normal;
+}
+
+
+
+.frontpage-block-menu.block-menu-join-menu .block-inner {
+  background-color: #f3aa2e;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'chalet-parisnineteensixty', Sans-Serif; 
+}
+
+.frontpage-block-menu.block-menu-shift-menu .block-inner {
+  background-color: #616161;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'chalet-parisnineteensixty', Sans-Serif; 
+}
+
+.frontpage-block-menu.block-menu-engage-menu .block-inner {
+  background-color: #002d56;
+  color: white;
+  font-family: 'chalet-parisnineteensixty', Sans-Serif; 
+}
+
+.frontpage-block-menu.block-menu-support-menu .block-inner {
+  background-color: #c03232;
+  color: white;
+  font-family: 'chalet-parisnineteensixty', Sans-Serif; 
+}
+
+
+.frontpage-block-menu.block-menu .content .menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.frontpage-block-menu .content {
+  overflow: hidden;
+}
+
+.frontpage-block-menu .content .menu.right {
+  left: 100%;
+  right: auto;
+}
+
+.frontpage-block-menu .content .menu.left {
+  right: 100%;
+  left: auto;
+}
+
+
+
+
+
+
+
+.frontpage-block-menu.block-menu .content .menu > *{
+  display: block;
+  width: 100%;
+  background: white;
+  margin: 0;
+  padding: 7px 0 4px 0;
+
+}
+
+
+.frontpage-block-menu .content .menu > *:hover{
+  background-color: #002d56;
+}
+
+.frontpage-block-menu .content .menu > *:hover a{
+  color: white;
+}
+
+.frontpage-block-menu .content .menu > * a:after{
+  content: " ›";
+  color: #c03232;
+}
+
+.frontpage-block-menu .content .menu > .last{
+    border-bottom-style: none;
+}
+
+
+.frontpage-block-menu .content a{
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "neutratext", Sans-Serif; 
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #002d56;
+  text-align: center;
+}
+
+
+.frontpage-block-menu .content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

@@ -2,3 +2,24 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal 
  *  and widescreen CSS files as appropriate. */
+
+ .zone-preface  .block-menu-join-menu .block-inner,
+.zone-preface  .block-menu-shift-menu .block-inner,
+.zone-preface  .block-menu-engage-menu .block-inner,
+.zone-preface  .block-menu-support-menu .block-inner{
+	height: 220px;
+	margin-bottom: 20px;
+}
+
+.zone-preface  .block-menu-join-menu .block-inner .block-title ,
+.zone-preface  .block-menu-shift-menu .block-inner .block-title ,
+.zone-preface  .block-menu-engage-menu .block-inner .block-title ,
+.zone-preface  .block-menu-support-menu .block-inner .block-title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 90px;
+	bottom: 90px;
+	font-size: 40px;
+}
+
