@@ -1,12 +1,31 @@
+@import 'will.css';
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
 
-.leacoast-local-logo{
-  padding: 18px;
+.zone-branding .leacoast-local-logo {
+  padding-top: 18px;
+}
+
+.zone-branding .log-in-out-block{
+  padding-top: 40%;
+}
+
+.zone-branding .log-in-out-block a{
+  text-decoration: none;
+  color: #c03232;
+  text-transform: uppercase;
+  font-family: 'neutratext';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.zone-branding .email-signup-form-block{
+  padding-top: 8%;
 }
 
 .frontpage-block-menu {
   position: relative;
 }
+
 
 .frontpage-block-menu .block-title {
 	position: relative;
@@ -15,8 +34,6 @@
   font-family: 'chalet-parisnineteensixty', Sans-Serif; 
   font-weight: normal;
 }
-
-
 
 .frontpage-block-menu.block-menu-join-menu .block-inner {
   background-color: #f3aa2e;
@@ -44,7 +61,6 @@
   font-family: 'chalet-parisnineteensixty', Sans-Serif; 
 }
 
-
 .frontpage-block-menu.block-menu .content .menu {
   margin: 0;
   padding: 0;
@@ -59,6 +75,7 @@
 
 .frontpage-block-menu .content {
   overflow: hidden;
+  height: 100%;
 }
 
 .frontpage-block-menu .content .menu.right {
@@ -71,11 +88,16 @@
   left: auto;
 }
 
+.frontpage-block-menu .menu{
+  border-width: 2px;
+  
+  border-style: solid;
+}
 
-
-
-
-
+.frontpage-block-menu .menu > * {
+  border-bottom-width: 2px;  
+  border-bottom-style: solid;
+}
 
 .frontpage-block-menu.block-menu .content .menu > *{
   display: block;
@@ -83,9 +105,7 @@
   background: white;
   margin: 0;
   padding: 7px 0 4px 0;
-
 }
-
 
 .frontpage-block-menu .content .menu > *:hover{
   background-color: #002d56;
@@ -104,7 +124,6 @@
     border-bottom-style: none;
 }
 
-
 .frontpage-block-menu .content a{
   text-decoration: none;
   font-size: 18px;
@@ -122,4 +141,163 @@
   left: 0;
   right: 0;
   text-align: center;
+}
+
+/* Upper Right Menu */
+.block-menu-side-menu-innerpage,
+.block-menu-side-menu {
+	background-color: rgba(255,255,255,.8);
+  margin-bottom: 50px;
+}
+.block-menu-side-menu-innerpage{
+  margin-bottom: 20px;
+}
+
+.block-menu-side-menu-innerpage  ul.menu li,
+.block-menu-side-menu ul.menu li {
+	list-style:none;
+
+}
+
+.block-menu-side-menu-innerpage ul.menu li a{
+  padding-top:6px;
+  padding-left: 5px;
+  padding-bottom:3px;
+  color: #002d56;
+  text-decoration:none;
+  display:block;
+  font-size:16px;
+  font-weight:bold;
+  text-transform:uppercase;
+
+}
+.block-menu-side-menu ul.menu li a{
+  padding-top:7px;
+  padding-left: 12px;
+  padding-bottom:3px;
+	color: #002d56;
+	text-decoration:none;
+	display:block;
+	font-size:24px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.block-menu-side-menu-innerpage ul.menu li a:after,
+.block-menu-side-menu ul.menu li a:after{
+  content: " ›";
+  color: #c03232;
+  font-size:24px;
+  line-height: 16px;
+}
+
+.block-menu-side-menu-innerpage ul.menu li a:hover,
+.block-menu-side-menu ul.menu li a:hover{
+	color: white;
+	background-color: #f3aa2a;
+}
+
+.upcoming-events-block{
+    margin-bottom: 20px;
+}
+
+.upcoming-events-block .block-title{
+  text-transform: uppercase;
+  color: #218eca;
+  padding-bottom: 4px;
+}
+
+.upcoming-events-block .upcoming-events-view{
+  border-color: #218eca;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.upcoming-events-block  .views-field-field-date{
+  font-size: 18px;
+}
+
+.upcoming-events-block  .views-field-title a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #218eca;
+  padding-bottom: 4px;
+  font-size: 20px;
+}
+
+.zone-postscript-wrapper {
+  display: block;
+}
+
+/* Footer Menu */
+.zone-postscript-wrapper {
+	background:url('../images/footer.jpg');
+  position: relative;
+}
+
+.zone-postscript-wrapper .zone-postscript{
+  height: 100%;
+  position: relative;
+}
+
+.zone-postscript-wrapper .region{
+  position: relative;
+  height: 100%;
+}
+
+.zone-postscript-wrapper .region .region-inner {
+    position: relative;
+  height: 100%;
+}
+
+.zone-postscript-wrapper  .block-inner{
+	height:100%;
+	border-left:solid 1px #79CDCD;
+}
+
+.zone-postscript-wrapper  .block-menu-support{
+	border-right:solid 1px #79CDCD;
+}
+
+.zone-postscript-wrapper .block-title {
+	color:white;
+	text-align:center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.zone-postscript-wrapper ul.menu li {
+	list-style: none;
+}
+
+.zone-postscript-wrapper ul.menu li a{
+	color: #f3aa2a;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.zone-postscript-wrapper ul.menu li a{
+	text-decoration:none;
+	display:block;
+	text-align:center;
+}
+
+.footer-left-block,
+.footer-right-block{
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.footer-left-block a,
+.footer-right-block a{
+    text-decoration:none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+
+.footer-right-block p{
+  text-align: right;
 }
