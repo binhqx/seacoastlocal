@@ -19,7 +19,22 @@
 }
 
 .zone-branding .email-signup-form-block{
-  padding-top: 8%;
+  padding-top: 7%;
+  width: 400px;
+}
+
+.zone-branding .email-signup-form-block input[type=text]{
+  
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'neutratext';
+  font-weight: normal;
+  font-size: 18px;
+  background-color: #fefefe;
+  text-align: center;
+  line-height: 10px;
+  padding-top: 3px;
+
 }
 
 .frontpage-block-menu {
@@ -198,12 +213,16 @@
 
 .upcoming-events-block{
     margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1px;
 }
 
 .upcoming-events-block .block-title{
   text-transform: uppercase;
   color: #218eca;
   padding-bottom: 4px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .upcoming-events-block .upcoming-events-view{

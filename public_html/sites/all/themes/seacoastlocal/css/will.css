@@ -1,4 +1,24 @@
-.join {
-	background: url("../images/ppl1.jpg");
-	background-position:right center;
+.joinbg {
+	background: url("../images/joinbg.jpg") no-repeat;
+	background-position:right top;
+}
+
+.homebg {
+	background: url("../images/homebg.jpg") no-repeat;
+	background-position:right top;
+}
+
+.engagebg {
+	background: url("../images/engagebg.jpg") no-repeat;
+	background-position:right top;
+}
+
+.shiftbg {
+	background: url("../images/shiftbg.jpg") no-repeat;
+	background-position:right top;
+}
+
+.supportbg {
+	background: url("../images/supportbg.jpg") no-repeat;
+	background-position:right top;
 }

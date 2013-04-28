@@ -1,28 +1,34 @@
 (function($) {
 
 	$(document).ready(function() {
-	
+
 		var url = window.location.pathname;
 
 		var splits = url.replace('http://', '').split('/');
-		
-		if(splits.length > 1) {
-			if(splits[1] == "join"){
-				$("body").addClass("join");
-			}			
+
+		if (splits.length > 1) {
+			if (splits[1] === '') {
+				$('body').addClass('homebg');
+			} else {
+				$('body').addClass(splits[1] + 'bg');
+			}
+		} else {
+			$('body').addClass('homebg');
 		}
-	
-		$('.upcoming-events-block').each(function(index,block){
+
+		$('.menu-name-menu-master-menu > ul:first').addClass('sf-menu').superfish();
+
+		$('.upcoming-events-block').each(function(index,block) {
 			var $block = $(block);
-			
+
 			$block.find('.upcoming-events-view').height(150);
 			$block.find('.upcoming-events-view').jScrollPane();
 		});
 
-		$('.zone-postscript-wrapper').each(function(index,wrapper){
+		$('.zone-postscript-wrapper').each(function(index,wrapper) {
 			$wrapper = $(wrapper);
-			$wrapper.find(".region").height($wrapper.height());
-			$wrapper.find(".region").find(".block-inner").height($wrapper.height());
+			$wrapper.find('.region').height($wrapper.height());
+			$wrapper.find('.region').find('.block-inner').height($wrapper.height());
 		});
 
 		$('.email-signup-form-block').each(function(index,block) {
@@ -32,7 +38,7 @@
 
 			submit.hide();
 			var textInput = $(block).find('input[type=text]');
-			textInput.width("50%");
+			textInput.width('50%');
 			textInput.val(submitText);
 			textInput.focus(function(event) {
 				var textInput = $(event.currentTarget);
@@ -40,10 +46,10 @@
 			});
 			textInput.blur(function(event) {
 				var textInput = $(event.currentTarget);
-				if(textInput.val() == ''){
+				if (textInput.val() == '') {
 					textInput.val(submitText);
 				}
-				
+
 			});
 		});
 		$('.frontpage-block-menu').each(function(index, frontpageBlockMenu) {
@@ -54,7 +60,7 @@
 			//console.log('color', bgColor);
 
 			$frontpageBlockMenu.find('.content').css({
-					'cursor':'pointer'
+					'cursor': 'pointer'
 			});
 
 			var level1ToLevel0 = function(event) {

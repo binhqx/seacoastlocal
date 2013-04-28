@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
 }
 .sf-menu li {
 	position: relative;
@@ -22,7 +23,8 @@
 	display: block;
 }
 
-.sf-menu a {
+.sf-menu a,
+.sf-menu span {
 	display: block;
 	position: relative;
 }
@@ -33,6 +35,26 @@
 
 
 /*** DEMO SKIN ***/
+
+.region-menu ul.sf-menu > li{
+	width: 100px;
+	height: 100px;
+	display: table;
+}
+
+.region-menu ul.sf-menu > li span,{
+
+}
+
+.region-menu ul,
+.region-menu li,
+.region-menu ul.menu li,
+.region-menu .expanded {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .sf-menu {
 	float: left;
 	margin-bottom: 1em;
@@ -42,7 +64,8 @@
 	min-width: 12em; /* allow long menu items to determine submenu width */
 	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
 }
-.sf-menu a {
+.sf-menu a,
+.sf-menu span {
 	border-left: 1px solid #fff;
 	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
 	border-top: 1px solid rgba(255,255,255,.5);
@@ -50,9 +73,14 @@
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
-.sf-menu a {
+.sf-menu a,
+.sf-menu span {
 	color: #13a;
 }
+.sf-menu li{
+
+}
+
 .sf-menu li {
 	background: #BDD2FF;
 	white-space: nowrap; /* no need for Supersubs plugin */
